@@ -1,0 +1,46 @@
+Knapsack Problem
+Jeff Parvin
+jpp30@pitt.edu
+10 Feb 2012
+
+
+INTRODUCTION
+
+A Binary Search Tree (BST) can often provide fast lookup. However, a BST will perform poorly if clients rarely retrieve the root value, but frequently need to retrieve values in distant leaves. The Cost of looking up an item in a BST is the product of its frequency times the number of comparisons required to find it. The Weighted Internal Path Length of a BST is the sum of the costs of each node. An Optimal BST has the lowest weighted internal path length and will be the most efficient over time.
+
+This program implements a top-down (memoized) dynamic programming algorithm to find the optimal binary search tree that was described in class. 
+
+Specifically this program:
+	-Implements a binary tree data structure.
+	-Implements a recursive algorithm to find an optimal BST and its cost.
+	-Has two optimize methods, one without memorization, and one with memoization to 	 make the algorithm run in cubic time.
+	-Is instrumented to count recursive calls.
+	-Includes a simple driver and battery of experiments to demonstrate the system
+
+
+
+FILES
+
+The following files should be present:
+
+     	BinaryTree.java - Binary Tree class
+	BSTOptimizer.java - Binary Search Tree Optimizer Class
+	TestBSTOptimizer.java - Test file for BSTOptimizer
+
+
+USAGE
+
+Compile in Java 2 SDK 1.6 with:
+
+     javac TestBSTOptimizer.java
+
+Run with:
+
+     java TestBSTOptimizer
+
+
+KNOWN PROBLEMS
+
+None.
+
+
